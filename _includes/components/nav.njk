@@ -1,11 +1,12 @@
 <!-- Nav -->
 <nav id="nav">
   <ul class="links">
-  {%- for entry in collections.all -%}
+  {% set navPages = collections.page | eleventyNavigation %}
+  {%- for entry in navPages %}
     <li {% if entry.url == page.url %} class="active"{% endif %}>
-      <a href="{{ entry.url }}">{{ entry.data.title }}</a>
+      <a href="{{ entry.url }}">{{ entry.title }}</a>
     </li>
-  {%- endfor -%}
+  {%- endfor %}
   </ul>
   {% include "components/socials.njk" %}
 </nav>
