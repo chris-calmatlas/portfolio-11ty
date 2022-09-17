@@ -1,0 +1,33 @@
+{
+  "name": "chris-calmatlas-portfolio-11ty",
+  "private": "true",
+  "description": "Chris Jaime's portfolio generated with 11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "author": "Chris Jaime",
+  "email": "chris@calmatlas.com",
+  "url": "https://www.calmatlas.com/",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "markdown-it": "^12.3.2",
+    "clean-css": "^5.2.4",
+    "markdown-it-anchor": "^8.4.1",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.15.1"
+  },
+  "Dependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "markdown-it": "^12.3.2",
+    "clean-css": "^5.2.4",
+    "markdown-it-anchor": "^8.4.1",
+    "html-minifier": "^4.0.0",
+    "uglify-js": "^3.15.1"
+  }
+}
