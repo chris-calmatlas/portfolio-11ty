@@ -1,3 +1,2 @@
 # Netlify redirects from browser to serve location
-http://calmatlas.com/* https://chris.calmatlas.com/:splat 301!
-http://www.calmatlas.com/* https://chris.calmatlas.com/:splat 301!
+https://calmatlas.com/* https://chris.calmatlas.com/:splat 301
