@@ -11,63 +11,15 @@
 			{% include "components/nav.njk" %}
 			<div id="main">
 				<!-- Featured Post -->
-				<article class="post featured">
-					<header class="major">
-						<h2><a href="#">Projects</a></h2>
-						<p>Python, HTML/CSS, JavaScript, PHP. Static pages, Wordpress, Node projects. It's a litte bit of a lot of things</p>
-					</header>
-					<a href="#" class="image main"><img src="/static/images/pic01.jpg" alt="" /></a>
-					<ul class="actions special">
-						<li><a href="#" class="button large">Full Story</a></li>
-					</ul>
-				</article>
-
+				{% for project in collections.homeFeature %}
+					{% include "components/featured-preview.njk" %}
+				{% endfor %}
+				
 				<!-- Posts -->
 				<section class="posts">
-					<article>
-						<header>
-							<h2><a href="#">Sed magna<br />
-							ipsum faucibus</a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="/static/images/pic02.jpg" alt="" /></a>
-						<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-						<ul class="actions special">
-							<li><a href="#" class="button">Full Story</a></li>
-						</ul>
-					</article>
-					<article>
-						<header>
-							<h2><a href="#">Primis eget<br />
-							imperdiet lorem</a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="/static/images/pic03.jpg" alt="" /></a>
-						<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-						<ul class="actions special">
-							<li><a href="#" class="button">Full Story</a></li>
-						</ul>
-					</article>
-					<article>
-						<header>
-							<h2><a href="#">Ante mattis<br />
-							interdum dolor</a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="/static/images/pic04.jpg" alt="" /></a>
-						<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-						<ul class="actions special">
-							<li><a href="#" class="button">Full Story</a></li>
-						</ul>
-					</article>
-					<article>
-						<header>
-							<h2><a href="#">Tempus sed<br />
-							nulla imperdiet</a></h2>
-						</header>
-						<a href="#" class="image fit"><img src="/static/images/pic05.jpg" alt="" /></a>
-						<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-						<ul class="actions special">
-							<li><a href="#" class="button">Full Story</a></li>
-						</ul>
-					</article>
+					{% for category in collections.category %}
+						{% include "components/preview.njk" %}
+					{% endfor %}
 				</section>
 			</div>
 			{% include "components/footer.njk" %}

@@ -1,0 +1,11 @@
+<article class="post featured">
+    <header class="major">
+        <span>Featured Project</span>
+        <h2><a href="{{ project.url }}">{{ project.data.title }}</a></h2>
+        <p>{{ project.data.description }}</p>
+    </header>
+    <a href="{{ project.url }}" class="image main"><img src="/static/images/{{ project.fileSlug }}.jpg" alt="project.data.title" /></a>
+    <ul class="actions special">
+        <li><a href="{{ project.url }}" class="button large">Read More</a></li>
+    </ul>
+</article>

@@ -1,0 +1,10 @@
+<article>
+    <header>
+        <h2><a href="{{ category.url }}">{{ category.data.title }}</a></h2>
+    </header>
+    <a href="{{ category.url }}" class="image fit"><img src="/static/images/{{ category.fileSlug }}.jpg" alt="{{ category.data.title }}" /></a>
+    <p>{{ category.data.description }}</p>
+    <ul class="actions special">
+        <li><a href="{{ category.url }}" class="button">See More</a></li>
+    </ul>
+</article>
