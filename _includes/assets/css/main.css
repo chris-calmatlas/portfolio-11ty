@@ -3790,6 +3790,28 @@ input, select, textarea {
 				border-top: 0;
 			}
 
+		#main .breadcrumb{
+			list-style-type: none;
+			border: none;
+			margin: 0;
+			padding: .2rem 1rem;
+			font-size: .8rem;
+		}	
+
+		#main .breadcrumb-item{
+			display: inline-block;
+		}
+
+		#main .breadcrumb-item ::after{
+			padding-left: .5rem;
+			content: "/";
+			color:#b3b7bb;
+		}
+
+		#main .breadcrumb-item a {
+			border-bottom: none;
+		}
+
 		#main > footer {
 			text-align: center;
 		}

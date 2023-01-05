@@ -1,0 +1,8 @@
+{% set breadcrumbs = collections.all | eleventyNavigationBreadcrumb("home", { includeSelf: true }, {allowMissing: true}) %}
+<ul class="breadcrumb">
+{%- for entry in breadcrumbs %}
+  <li {% if entry.url == page.url %} class="my-active-class breadcrumb-item"{% else %} class="breadcrumb-item" {% endif %}>
+    <a href="{{ entry.url }}">{{ entry.title }}</a>
+  </li>
+{%- endfor %}
+</ul>

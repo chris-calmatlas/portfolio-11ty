@@ -7,7 +7,7 @@ Software Engineer for hire
 
 Currently employed in government as an Infrastructure Engineer
 
-[www.calmatlas.com](https://www.calmatlas.com/)
+[chris.calmatlas.com](https://chris.calmatlas.com/)
 
 [github](https://github.com/chris-calmatlas) 
 
@@ -17,8 +17,8 @@ Currently employed in government as an Infrastructure Engineer
 Tech Used: HTML/CSS, Javascript, 11ty (Jamstack), nunjucks
 
 # Optimization
-Scripts and css are currently being passed through instead of being minified. Since there's minification for .js and .css built into 11ty I'd like to implement that.
+Scripts and css from the original template are mostly being passed through instead of being processed by 11ty. Since there's minification for .js and .css built into 11ty I'd like to get that set up correctly.
 
 # Todo
-- [ ] Analytics
+- [x] Analytics
 - [ ] Actually put the projects in their places
